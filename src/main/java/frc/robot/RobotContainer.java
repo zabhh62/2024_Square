@@ -28,8 +28,8 @@ public class RobotContainer {
     private final OperatorInput                operatorInput      = new OperatorInput();
 
     // The robot's subsystems and commands are defined here...
-    private final DriveSubsystem               driveSubsystem     = new DriveSubsystem();
     private final LightsSubsystem              lightsSubsystem    = new LightsSubsystem();
+    private final DriveSubsystem               driveSubsystem     = new DriveSubsystem(lightsSubsystem);
 
     // All dashboard choosers are defined here...
     private final SendableChooser<DriveMode>   driveModeChooser   = new SendableChooser<>();
