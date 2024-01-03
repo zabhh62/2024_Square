@@ -30,7 +30,7 @@ public class AutonomousCommand extends SequentialCommandGroup {
 
         autoPattern = autoPatternChooser.getSelected();
 
-        Optional<Alliance> dsAlliance    = DriverStation.getAlliance();
+        Optional<Alliance> dsAlliance = DriverStation.getAlliance();
         alliance = dsAlliance.orElseGet(() -> null);
 
         StringBuilder sb = new StringBuilder();
@@ -61,7 +61,7 @@ public class AutonomousCommand extends SequentialCommandGroup {
             return;
 
         case DRIVE_FORWARD:
-            // What should we put here?
+            // FIXME What should we put here?
             // Drive forward for 1 second
             // addCommands(new DriveForwardCommand(1, driveSubsystem));
         }
