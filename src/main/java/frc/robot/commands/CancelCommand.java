@@ -7,7 +7,7 @@ import frc.robot.subsystems.DriveSubsystem;
  * This command is used to safely stop the robot in its current position, and to cancel any running
  * commands
  */
-public class CancelCommand extends LoggingCommandBase {
+public class CancelCommand extends LoggingCommand {
 
     private final OperatorInput  operatorInput;
     private final DriveSubsystem driveSubsystem;
