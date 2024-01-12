@@ -21,7 +21,7 @@ public final class Constants {
     public static final class AutoConstants {
 
         public static enum AutoPattern {
-            DO_NOTHING, DRIVE_FORWARD
+            DO_NOTHING, DRIVE_FORWARD, OTHER_AUTO
         };
     }
 
